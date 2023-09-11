@@ -5,6 +5,8 @@ body {
   margin: 0px;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
+  max-width: 100%; /* Largura máxima para a página */
+  overflow-x: hidden; /* Evita a rolagem horizontal em telas pequenas */
 }
 
 header {
@@ -21,18 +23,18 @@ header button {
 }
 
 .form-field {
-  margin-bottom: 10px;  
+  margin-bottom: 10px;
 }
 
 input,
 button {
-    width: auto; 
-    padding: 15px;
-    border-radius: 5px;
-    margin: 10px;
-    display: block;
-    margin: 0 auto; 
-    margin-top: 10px;
+  width: auto;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 input[type="radio"] {
@@ -87,7 +89,6 @@ button.fab.right {
   background: white;
   border: none;
   color: #076066;
-  
 }
 .outline {
   background: transparent;
@@ -111,32 +112,35 @@ button.fab.right {
 
 /* Estilos padrão para telas maiores */
 input {
-    width: 300px ;
+  width: 300px;
 }
 
 button {
-    width: 330px ;
+  width: 330px;
 }
-
 
 /* Media query para telas menores (por exemplo, tablets) */
 @media screen and (max-width: 768px) {
-    input {
-        width: 200px ;
-    }
-    
-    button {
-        width: 230px ;
-    }
+  input {
+    width: 200px;
+  }
+
+  button {
+    width: 230px;
+  }
 }
 
 /* Media query para telas muito pequenas (por exemplo, smartphones) */
 @media screen and (max-width: 480px) {
-    input {
-        width: 200px ;
-    }
-    
-    button {
-        width: 230px ;
-    }
+  body {
+    font-size: 14px; /* Tamanho de fonte menor para telas menores */
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
 }
