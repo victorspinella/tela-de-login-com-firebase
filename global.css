@@ -1,12 +1,10 @@
 body {
   background: #076066;
   color: white;
-  padding: 0px;
-  margin: 0px;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
-  max-width: 100%; /* Largura máxima para a página */
-  overflow-x: hidden; /* Evita a rolagem horizontal em telas pequenas */
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -119,28 +117,24 @@ button {
   width: 330px;
 }
 
-/* Media query para telas menores (por exemplo, tablets) */
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 767px) {
   input {
-    width: 200px;
+    width: 280px;
   }
 
   button {
-    width: 230px;
+    width: 310px;
   }
 }
 
-/* Media query para telas muito pequenas (por exemplo, smartphones) */
-@media screen and (max-width: 480px) {
-  body {
-    font-size: 14px; /* Tamanho de fonte menor para telas menores */
-  }
-
+/* Estilos para telas menores (mobile) */
+@media screen and (max-width: 479px) {
   input {
-    width: 100%;
+    width: 240px;
   }
 
   button {
-    width: 100%;
+    width: 270px;
   }
 }
